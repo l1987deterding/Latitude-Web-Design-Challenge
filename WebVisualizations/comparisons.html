@@ -53,12 +53,6 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="landing.html">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="comparisons.html">Comparisons</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="data.html">Data</a>
-        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Plot
@@ -70,6 +64,12 @@
             <li><a class="dropdown-item" href="windspeed.html">Wind Speed</a></li>
           </ul>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="comparisons.html">Comparisons</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="data.html">Data</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -79,15 +79,51 @@
   <div class="row content">
     <div class="col-sm-8 text-left"> 
       <h1>Comparisons</h1>
-      <p>Roll over an image to find out more.</p>
+      <p>Click on an image to find out more.</p>
       <hr>
       <div class="row">
-        <div class="col-sm-6"><img src="images/Fig1.png" style="width:100%" class="img-fluid" alt="Responsive image"></div>
-        <div class="col-sm-6"><img src="images/Fig2.png" style="width:100%" class="img-fluid" alt="Responsive image"></div>
+        <div class="col-sm-6">
+          <div class="thumbnail">
+            <a href="maxtemp.html">
+              <img src="images/Fig1.png" alt="Max Temperature" style="width:100%">
+              <div class="caption">
+              <p>Max Temperature</p>
+              </div>
+            </a>
+          </div>
+          </div>
+        <div class="col-sm-6">
+          <div class="thumbnail">
+            <a href="humidity.html">
+              <img src="images/Fig2.png" alt="Humidity" style="width:100%">
+              <div class="caption">
+                <p>Humidity</p>
+              </div>
+            </a>
+          </div>
+      </div>
       </div>
       <div class="row">
-        <div class="col-sm-6"><img src="images/Fig3.png" style="width:100%" class="img-fluid" alt="Responsive image"></div>
-        <div class="col-sm-6"><img src="images/Fig4.png" style="width:100%" class="img-fluid" alt="Responsive image"></div>
+        <div class="col-sm-6">
+                  <div class="thumbnail">
+            <a href="cloudiness.html">
+              <img src="images/Fig3.png" alt="Cloudiness" style="width:100%">
+              <div class="caption">
+                <p>Cloudiness</p>
+              </div>
+            </a>
+          </div>
+          </div>
+        <div class="col-sm-6">
+            <div class="thumbnail">
+            <a href="windspeed.html">
+              <img src="images/Fig4.png" alt="Wind Speed" style="width:100%">
+              <div class="caption">
+                <p>Wind Speed</p>
+              </div>
+            </a>
+          </div>
+          </div>
       </div>
   </div>
 </div>
