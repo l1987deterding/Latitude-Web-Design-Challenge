@@ -4,14 +4,14 @@
   <title>Homework_11_Deterding</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
+      background-color: #ffff00;
     }
     
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
@@ -42,34 +42,34 @@
   </style>
 </head>
 <body>
-
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Latitude</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-          <div class="container">                                      
-          <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Plots
-              <span class="caret"></span></button>
-               <ul class="dropdown-menu">
-                <li><a href="maxtemp.html">Max Temperature</a></li>
-                <li><a href="humidity.html">Humidity</a></li>
-                <li><a href="cloudiness.html">Cloudiness</a></li>
-                <li><a href="windspeed.html">Wind Speed</a></li>
-               </ul>
-          </div>
-          </div>
-        <li><a href="Comparisons.html">Comparisons</a></li>
-        <li><a href="data.html">Data</a></li>
+    <a class="navbar-brand" href="landing.html">Latitude</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="landing.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="comparisons.html">Comparisons</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="data.html">Data</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Plot
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="maxtemp.html">Max Temp</a></li>
+            <li><a class="dropdown-item" href="humidity.html">Humidity</a></li>
+            <li><a class="dropdown-item" href="cloudiness.html">Cloudiness</a></li>
+            <li><a class="dropdown-item" href="windspeed.html">Wind Speed</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
   </div>
@@ -77,7 +77,7 @@
   
 <div class="container-fluid text-center">    
   <div class="row content">
-    <div class="col-sm-6 text-left"> 
+    <div class="col-md-6 text-left"> 
       <h1>Summary: Latitude vs. X</h1>
       <p>The purpose of this project was to analyze how weather changes with proximity
          to the equator. OpenWeatherMap API was used to generate the dataset used for
@@ -87,13 +87,14 @@
          as part of the analysis, as well as explanations and descriptions of any trends
          and correlations witnessed.</p>
       <hr>
-  </div>
-    <div class="container">
+    </div>
+    <div class="col-md-6">
       <h2> Visualizations </h2>
+    <div class="container">
       <div class="row">
         <div class="col-md-3">
           <div class="thumbnail">
-            <a href="maxtemp.html" target="_blank">
+            <a href="maxtemp.html">
               <img src="images/Fig1.png" alt="Max Temperature" style="width:100%">
               <div class="caption">
                 <p>Max Temperature</p>
@@ -111,6 +112,8 @@
             </a>
           </div>
         </div>
+        </div>
+        <div class="row">
         <div class="col-md-3">
           <div class="thumbnail">
             <a href="cloudiness.html" target="_blank">
@@ -131,6 +134,8 @@
             </a>
           </div>
         </div>
+        </div>
+      </div>
 
 
 </body>
