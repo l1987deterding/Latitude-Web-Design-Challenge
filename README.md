@@ -1,4 +1,7 @@
 # Web-Design-Challenge
+![image](https://user-images.githubusercontent.com/78701437/131882266-c52f961e-780e-4029-a3c5-af700a114169.png)
+![image](https://user-images.githubusercontent.com/78701437/131882324-1aa640a9-5466-4bc7-8857-947dfe0f0697.png)
+
 Bootcamp Homework over HTML and CSS
 Web Design Homework - Web Visualization Dashboard (Latitude)
 
